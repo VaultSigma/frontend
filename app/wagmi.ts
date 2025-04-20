@@ -9,7 +9,7 @@ import {
 } from 'wagmi/chains';
 
 export const config = getDefaultConfig({
-  appName: 'SparkleID',
+  appName: 'SigmaFi',
   projectId: '310766920a1a1c64ca07e9fa721aacab',
   chains: [
     mainnet,

@@ -1,10 +1,10 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## SparkleID Frontend
+## SigmaFi Frontend
 
 [Visit Site](https://nextjs.org/)
 
-Check out the AI feature to learn more about SparkleID
+Check out the AI feature to learn more about SigmaFi
 
 First, run the development server:
 

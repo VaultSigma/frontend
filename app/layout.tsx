@@ -10,8 +10,8 @@ import { Web3Provider } from "./providers/web3provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Sparkle ID",
-  description: "Decentralized Identity and Credential Management for Healthcare",
+  title: "SigmaFi",
+  description: "Decentralized AI-Driven Asset Management on Swell Chain",
 };
 
 export default function RootLayout({

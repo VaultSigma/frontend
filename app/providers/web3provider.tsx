@@ -20,7 +20,7 @@ const config = createConfig(
     walletConnectProjectId: process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID || '310766920a1a1c64ca07e9fa721aacab',
 
     // Required App Info
-    appName: "Sparkle ID",
+    appName: "SigmaFi",
 
     // Optional App Info
     appDescription: "Your App Description",

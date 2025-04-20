@@ -56,33 +56,32 @@ export default function Home() {
 
   const plans = [
     {
-      name: "Healthcare DID Management",
+      name: "AI-Driven Fund Rebalancing",
       features: [
-        "Patient DIDs: Create and manage patient profiles with encrypted health records.",
-        "Provider DIDs: Issue DIDs for healthcare providers, enabling role-based access control.",
-        "Institutional DIDs: Register hospitals, clinics, and insurers with governance-level DIDs.",
-        "Sub-DIDs: Enable granular permissions for health professionals and IoT devices."
+        "Automated Strategy Execution: Dynamically move funds between pools based on APY and volume analysis.",
+        "LLM-Powered Recommendations: Use text embeddings and large language models to guide rebalancing decisions.",
+        "Adaptive Allocation: Continuously optimize pool allocations in response to market changes."
       ]
     },
     {
-      name: "Verifiable Credential Issuance & Verification",
+      name: "Liquidity Pool Intelligence",
       features: [
-        "Medical Records & Test Results: Issue verifiable lab results, prescriptions, and diagnoses.",
-        "Vaccination Records: Manage immunization certificates and booster reminders.",
-        "Provider Certifications: Verify doctor credentials and licenses.",
-        "Research Consents: Digitally sign and verify patient consent forms."
+        "APY & Volume Analysis: Ingest real-time data from Swell Chain pools to calculate optimal returns.",
+        "Strategy Registry: Maintain and test multiple AI strategies before deployment.",
+        "Pool Metadata Embedding: Convert textual insights into vector embeddings for LLM-driven evaluations.",
+        "Custom Strategy Filters: Allow users to choose risk preferences and strategy constraints."
       ]
     },
     {
-      name: "Medical Data Management",
+      name: "User Vaults & Yield Optimization",
       features: [
-        "Secure Data Storage: Store patient data using Hedera File Service (HFS) and IPFS.",
-        "Data Integrity: Use cryptographic hashing to ensure data immutability.",
-        "Metadata Management: Encrypt and manage healthcare data with selective access permissions.",
-        "Consent-Based Access: Patients control access to their health data."
+        "Decentralized Vaults: Users deposit into AI-managed vaults with auto-rebalancing built in.",
+        "Transparent Returns: Track performance and rebalancing history on-chain.",
+        "Smart Fee Model: Performance-based fee structure to align with user gains.",
+        "Non-Custodial Access: Users retain control over assets with secure withdrawal mechanisms."
       ],
     },
-  ];
+  ];  
   return (
     <main>
       <section className="relative bg-gradient-to-b from-slate-900 via-blue-900 to-bg">
@@ -96,8 +95,7 @@ export default function Home() {
                 </Link>
               </div>
               <nav className="hidden space-x-6 text-sm text-blue-200 md:block">
-                <Link href="https://docs.google.com/document/d/1GVrZMNklil3qDlZf2qeZHFul2cYrXZsp8XjNC1B8n-k/edit?usp=sharing">Whitepaper</Link>
-                {/* <Link href="https://github.com/Sparkle-ID">Github</Link> */}
+                <Link href="https://github.com/VaultSigma">Docs</Link>
               </nav>
                 <Button
                   size="lg"
@@ -110,14 +108,11 @@ export default function Home() {
 
             <div className="mx-auto mt-16 max-w-3xl text-center">
               <h1 className="text-4xl font-bold leading-tight tracking-tighter text-white sm:text-4xl md:text-5xl lg:text-6xl">
-                Decentralized Identity and Credential Management for Healthcare
+                Decentralized AI-Driven Asset Management on Swell Chain
               </h1>
 
               <p className="mt-6 text-lg text-blue-200">
-                Sparkle ID is a healthcare-focused decentralized identity
-                platform built on Hedera Hashgraph, enabling secure management
-                of patient records, verifiable medical credentials, and
-                data-sharing with privacy and compliance at its core.
+              Sigma Finance is a decentralized protocol built on Swell Chain that leverages AI to dynamically rebalance assets across liquidity pools. By analyzing APY and volume data alongside large language model recommendations, Sigma optimizes fund allocation with transparency and efficiency.
               </p>
 
               <div className="mt-8 flex justify-center gap-4">
@@ -135,7 +130,7 @@ export default function Home() {
                       <AlertDialogHeader>
                         <AlertDialogTitle>Say Hi to our AI</AlertDialogTitle>
                         <AlertDialogDescription>
-                          Converse smoothly with our AI to learn more about Sparkle ID.
+                          Converse smoothly with our AI to learn more about SigmaFi.
                         </AlertDialogDescription>
                       </AlertDialogHeader>
                       <AlertDialogFooter>
@@ -162,7 +157,7 @@ export default function Home() {
                   variant="outline"
                   className="border-blue-400  hover:bg-blue-900/50"
                 >
-                  <Link href="https://github.com/Sparkle-ID">Github</Link>
+                  <Link href="https://github.com/VaultSigma">Github</Link>
                 </Button>
               </div>
             </div>
