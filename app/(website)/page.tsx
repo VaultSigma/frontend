@@ -4,55 +4,15 @@ import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
-  CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import {
-  AlertDialog,
-  AlertDialogAction,
-  AlertDialogCancel,
-  AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogTitle,
-  AlertDialogTrigger,
-} from "@/components/ui/alert-dialog";
-import { CheckCircle, MenuIcon } from "lucide-react";
+import { CheckCircle } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "@/public/logo.png";
 
-import { useConversation } from "@11labs/react";
-import { useCallback } from "react";
-
 export default function Home() {
-  const conversation = useConversation({
-    onConnect: () => console.log("Connected"),
-    onDisconnect: () => console.log("Disconnected"),
-    onMessage: (message) => console.log("Message:", message),
-    onError: (error) => console.error("Error:", error),
-  });
-
-  const startConversation = useCallback(async () => {
-    try {
-      // Request microphone permission
-      await navigator.mediaDevices.getUserMedia({ audio: true });
-
-      // Start the conversation with your agent
-      await conversation.startSession({
-        agentId: "omhyuOcbksDuDEfaXpZJ", // Replace with your agent ID
-      });
-    } catch (error) {
-      console.error("Failed to start conversation:", error);
-    }
-  }, [conversation]);
-
-  const stopConversation = useCallback(async () => {
-    await conversation.endSession();
-  }, [conversation]);
 
   const plans = [
     {
@@ -95,14 +55,14 @@ export default function Home() {
                 </Link>
               </div>
               <nav className="hidden space-x-6 text-sm text-blue-200 md:block">
-                <Link href="https://github.com/VaultSigma">Docs</Link>
+                <Link href="https://github.com/VaultSigma">Github</Link>
               </nav>
                 <Button
                   size="lg"
                   variant="outline"
                   className="border-blue-400  hover:bg-blue-900/50"
                 >
-                  <Link href="#dashboard" className="inactive">Dashboard</Link>
+                  <Link href="https://dapp.sigmafi.xyz" className="inactive">Dashboard</Link>
                 </Button>
             </div>
 
@@ -117,40 +77,6 @@ export default function Home() {
 
               <div className="mt-8 flex justify-center gap-4">
                 <div>
-                  <AlertDialog>
-                    <AlertDialogTrigger asChild>
-                      <Button
-                        size="lg"
-                        className="bg-blue-600 text-white hover:bg-blue-700"
-                      >
-                        Learn more with our AI
-                      </Button>
-                    </AlertDialogTrigger>
-                    <AlertDialogContent>
-                      <AlertDialogHeader>
-                        <AlertDialogTitle>Say Hi to our AI</AlertDialogTitle>
-                        <AlertDialogDescription>
-                          Converse smoothly with our AI to learn more about SigmaFi.
-                        </AlertDialogDescription>
-                      </AlertDialogHeader>
-                      <AlertDialogFooter>
-                        <Button
-                          onClick={startConversation}
-                          disabled={conversation.status === "connected"}
-                          size="lg"
-                          className="border-blue-400  hover:bg-blue-900/50"
-                          >
-                          Start Conversation
-                        </Button>
-                        <AlertDialogCancel
-                            onClick={stopConversation}
-                            disabled={conversation.status !== "connected"}
-                        >
-                            End Conversation
-                        </AlertDialogCancel>
-                      </AlertDialogFooter>
-                    </AlertDialogContent>
-                  </AlertDialog>
                 </div>
                 <Button
                   size="lg"
