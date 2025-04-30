@@ -62,7 +62,7 @@ export default function Home() {
                   variant="outline"
                   className="border-blue-400  hover:bg-blue-900/50"
                 >
-                  <Link href="https://dapp.sigmafi.xyz" className="inactive">Dashboard</Link>
+                  <Link href="https://dapp.sigma-fi.xyz" className="inactive">Dashboard</Link>
                 </Button>
             </div>
 
